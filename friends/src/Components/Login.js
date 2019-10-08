@@ -1,36 +1,57 @@
 import React from "react";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 class Login extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
+  state = {
+    credentials: {
       username: "",
       password: ""
-    };
-  }
+    }
+  };
+
+  handleChange = e => {
+    this.setState({
+      credentials: {
+        ...this.state.credentials,
+        [e.target.name]: e.target.value
+      }
+    });
+  };
+
+  login = e => {
+    e.preventDefault();
+    axiosWithAuth()
+      .post('/login', this.state.credentials)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  };
 
   render() {
-    const { username, password } = this.state;
+  
     return (
       <div className="form">
-        <form>
+        <form onSubmit={this.login}>
           <input
             type="text"
             name="username"
-            placeholder="username"
+            value={this.state.credentials.username}
+            onChange={this.handleChange}
             className="forminput"
+
           />
 
-          <br /><br />
+          <br />
+          <br />
 
           <input
             type="password"
             name="password"
-            placeholder="password"
+            value={this.state.credentials.password}
+            onChange={this.handleChange}
             className="forminput"
           />
-          <br /><br />
+          <br />
+          <br />
 
           <button type="submit">Login</button>
         </form>
