@@ -41,7 +41,7 @@ const AddFriendForm = ({ setFriends }) => {
   };
 
   return (
-    <div  className="addfriendform">
+    <div className="addfriendform">
       <h1>Add Someone New:</h1>
       <form error onSubmit={e => formHandler(e)}>
         <input

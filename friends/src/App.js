@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "./Components/Login";
 import Friends from "./Components/Friends";
-import Home from './Components/Home';
+import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import PrivateRoute from "./Components/PrivateRoute";
@@ -17,8 +17,7 @@ function App() {
           you must login to see.
           <div className="links">
             <ul>
-
-            <li>
+              <li>
                 <Link to="/home">Home</Link>
               </li>
 
@@ -29,8 +28,6 @@ function App() {
               <li>
                 <Link to="/friends">Friends</Link>
               </li>
-
-
             </ul>
           </div>
         </div>

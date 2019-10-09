@@ -1,11 +1,10 @@
-html
-body {
+html body {
   background: #d3ccca;
 }
 
 body a {
   font-size: 20px;
-  color: #F7C331;
+  color: #f7c331;
   text-decoration: none;
 }
 
@@ -49,7 +48,6 @@ li {
   color: #204963;
 }
 
-
 .title {
   line-height: 50px;
   padding: 1em;
@@ -63,10 +61,10 @@ li {
 }
 
 .forminput {
-  -webkit-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
-  font-weight: bold; 
+  -webkit-box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
   color: white;
   font-size: 1em;
   padding: 15px;
@@ -74,12 +72,12 @@ box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
 }
 
 button {
-  background: #F7C331;
+  background: #f7c331;
   font-size: 1em;
   font-weight: bold;
   border: 0;
   padding: 1em;
-  background-image: linear-gradient(#F7C331, rgb(165, 125, 15));
+  background-image: linear-gradient(#f7c331, rgb(165, 125, 15));
 }
 
 .secretpage {
@@ -95,7 +93,7 @@ button {
 }
 
 .friend {
-  background-image: linear-gradient(#F7C331, rgb(165, 125, 15));
+  background-image: linear-gradient(#f7c331, rgb(165, 125, 15));
   width: 200px;
   margin: 10px;
   padding: 2em;
@@ -103,18 +101,18 @@ button {
 }
 
 .addfriendform {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .addfriendinput {
-  -webkit-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
-    font-weight: bold; 
-    color: white;
-    font-size: 1em;
-    padding: 15px;
-    background-image: linear-gradient(rgb(39, 40, 43), rgb(7, 7, 7));
+  -webkit-box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 13px -1px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  padding: 15px;
+  background-image: linear-gradient(rgb(39, 40, 43), rgb(7, 7, 7));
   margin: 10px;
 }
 
@@ -126,4 +124,3 @@ button {
   padding: 4em;
   background-image: linear-gradient(rgb(39, 40, 43), rgb(7, 7, 7));
 }
-
