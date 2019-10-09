@@ -76,6 +76,42 @@ button {
   background-image: linear-gradient(#F7C331, rgb(165, 125, 15));
 }
 
+.secretpage {
+  background: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.friend {
+  background-image: linear-gradient(#F7C331, rgb(165, 125, 15));
+  width: 200px;
+  margin: 10px;
+  padding: 2em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.addfriendform {
+  padding: 1em; 
+}
+
+.addfriendinput {
+  -webkit-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.75);
+    font-weight: bold; 
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+    background-image: linear-gradient(rgb(39, 40, 43), rgb(7, 7, 7));
+  margin: 10px;
+}
+
 .footer {
   line-height: 40px;
   text-align: center;
@@ -83,11 +119,5 @@ button {
   font-weight: bold;
   padding: 4em;
   background-image: linear-gradient(rgb(39, 40, 43), rgb(7, 7, 7));
-}
-
-.secretpage {
-  background: white;
-  text-align: center;
-  padding: 1em;
 }
 

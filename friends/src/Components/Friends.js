@@ -1,37 +1,35 @@
-import React from "react";
+import React, { useEffect, useState }from 'react';
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import AddFriend from "./AddFriend";
 
-class Friends extends React.Component {
-  state = {
-    friends: []
-  };
 
-  componentDidMount() {
-    this.getData();
-  }
 
-  getData = () => {
+const Friends = () => {
+  const [friends, setFriends] = useState([]);
+
+ useEffect(() => {
     axiosWithAuth()
       .get('/friends')
       .then(res =>  {
-        this.setState({
-          friends: res.data 
+       setFriends(res.data);
         })
-      })
       .catch(err => console.log(err));
-  };
+ }, []);
 
-  render() {
+
     return (
       <div className="secretpage">
         <h1>The Secret List</h1>
-        <h3>Hurray! You can now see the secret friends.</h3>
+        <h3>Hurray! You can now see the secret friends.  You can also scroll down and add new friends to this list, enjoy!</h3>
 
         <br />
         <hr />
-        <div>
-          <h1>List of Friends</h1>
-          {this.state.friends.map(x => {
+
+        <h1>List of Friends</h1>
+
+        <div className="friends">
+          
+          {friends.map(x => {
             return (
               <div id={x.id} className="friend">
                 <h1>{x.name}</h1>
@@ -41,9 +39,15 @@ class Friends extends React.Component {
             );
           })}
         </div>
+
+        <hr />
+
+
+       <AddFriend setFriends={setFriends}/>
       </div>
     );
   }
-}
 
-export default Friends;
+
+
+export default Friends; 
