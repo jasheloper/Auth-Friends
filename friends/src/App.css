@@ -9,6 +9,12 @@ body a {
   text-decoration: none;
 }
 
+.home {
+  padding: 1em;
+  background: white;
+  text-align: center;
+}
+
 .nav {
   line-height: 30px;
   display: flex;
